@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Praias
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item-sliding>
+      <ion-item>
+        
+        <ion-avatar slot="start" >
+          <ion-img src="http://experimentemaceio.com.br/wp-content/uploads/2022/06/Farol-da-Ponta-Verde-Credito-Wesley-Menegari-480x300.jpg" class="your-img" ></ion-img>
+        </ion-avatar>
+        <ion-label>
+          <ion-text color="primary"><h2>Ponta Verde</h2></ion-text>
+          <p>Maceió</p>
+        </ion-label>
+        <ion-icon slot="icon-only" name="golf-outline"></ion-icon><ion-note slot="end">Norte</ion-note></ion-item>
+              
+      
+      <ion-item-options side="end">
+        <ion-item-option (click)="presentModal()" color="danger"><ion-icon slot="icon-only" name="information-circle-outline"></ion-icon></ion-item-option>
+        <ion-item-option (click)="openSite('https://goo.gl/maps/SLNeJtvNL9JAmfaA9')"><ion-icon slot="icon-only"  name="map-outline"></ion-icon></ion-item-option>
+        
+      </ion-item-options>
